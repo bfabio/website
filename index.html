@@ -1,19 +1,149 @@
-﻿<!doctype html>
-<html class="no-js" lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fabio Bonelli</title>
-        <meta name="description" content="Fabio Bonelli">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Play">
-    </head>
-    <body>
-		<div id="mail">
-			<a href="mailto:mail@fabiobonelli.it">mail@fabiobonelli.it</a>
-		</div>
-		<script src="js/ripple.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fabio(1) - manual page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #fffff8;
+      color: #1a1a1a;
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .man {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .man-header, .man-footer {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .indent {
+      margin-left: 5ch;
+    }
+
+    .indent2 {
+      margin-left: 10ch;
+    }
+
+    .bold { font-weight: bold; }
+    .underline { text-decoration: underline; }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      background: #1a1a1a;
+      color: #fffff8;
+    }
+
+    .opt {
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0.3rem 0;
+    }
+
+    .man-footer {
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 12px; padding: 1rem; }
+      .indent { margin-left: 3ch; }
+      .indent2 { margin-left: 6ch; }
+    }
+
+    ::selection { background: #1a1a1a; color: #fffff8; }
+  </style>
+</head>
+<body>
+<div class="man">
+
+<div class="man-header">
+  <span>FABIO(1)</span>
+  <span>User Commands</span>
+  <span>FABIO(1)</span>
+</div>
+
+<h1>NAME</h1>
+<p class="indent">fabio - technologist, systems engineer, open source contributor</p>
+
+<h1>SYNOPSIS</h1>
+<p class="indent"><span class="bold">fabio</span> [<span class="underline">--lang</span>=<span class="underline">LANGUAGE</span>] [<span class="underline">--project</span>=<span class="underline">NAME</span>] [<span class="underline">COMMAND</span>]</p>
+
+<h1>DESCRIPTION</h1>
+<p class="indent"><span class="bold">fabio</span> is based in Italy, currently freelance for the <a href="https://ec.europa.eu" target="_blank" rel="noopener">European Commission</a>, previously at <a href="https://github.com/teamdigitale" target="_blank" rel="noopener">@teamdigitale</a>.</p>
+
+<h1>OPTIONS</h1>
+<p class="indent"><span class="opt">--lang</span>=<span class="underline">go</span></p>
+<p class="indent2">APIs, CLI tools, infrastructure. Primary weapon.</p>
+<p></p>
+<p class="indent"><span class="opt">--lang</span>=<span class="underline">rust</span></p>
+<p class="indent2">Emulators, system tools, API clients. Sharp and safe.</p>
+<p></p>
+<p class="indent"><span class="opt">--lang</span>=<span class="underline">python</span></p>
+<p class="indent2">Automation, infrastructure scripting. Quick and effective.</p>
+<p></p>
+<p class="indent"><span class="opt">--lang</span>=<span class="underline">c</span></p>
+<p class="indent2">Low-level tools, file format parsers. Close to metal.</p>
+<p></p>
+<p class="indent"><span class="opt">--lang</span>=<span class="underline">ruby</span></p>
+<p class="indent2">Scripting, Web (sigh).</p>
+<p></p>
+<p class="indent"><span class="opt">--os</span>=<span class="underline">gnu/linux</span></p>
+<p class="indent2">Ansible, containers, CI/CD</p>
+
+<h1>PROJECTS</h1>
+<p class="indent"><span class="bold"><a href="https://github.com/bfabio/gameperson" target="_blank" rel="noopener">gameperson</a></span>(1) - Game Boy emulator written in Rust. CPU opcodes, GPU rendering, sprites, joypad. Plays Tetris. 17 stars.</p>
+<p></p>
+<p class="indent"><span class="bold"><a href="https://github.com/bfabio/packddir" target="_blank" rel="noopener">packddir</a></span>(1) - Extracts Quake 1 and 2 .PAK files. Written in C.</p>
+<p></p>
+<p class="indent"><span class="bold"><a href="https://github.com/bfabio/ansible-borg_client" target="_blank" rel="noopener">ansible-borg_client</a></span>(5) - Ansible role to configure borg backup for remote server backup.</p>
+<p></p>
+<p class="indent"><span class="bold"><a href="https://github.com/italia/developers-italia-api" target="_blank" rel="noopener">developers-italia-api</a></span>(8) - The API powering the Italian public software catalog. Go, Fiber, PostgreSQL.</p>
+<p></p>
+<p class="indent"><span class="bold"><a href="https://github.com/publiccodeyml/publiccode.yml" target="_blank" rel="noopener">publiccode.yml</a></span>(7) - The publiccode.yml spec.</p>
+
+<h1>ENVIRONMENT</h1>
+<p class="indent"><span class="bold">GITHUB_USER=bfabio</p>
+<p class="indent"><span class="bold">LOCATION</span>=Italy</p>
+
+<h1>FILES</h1>
+<p class="indent"><span class="underline">/home/fabio/.config/yogurt</span> - Personal preferences.</p>
+
+<h1>REPORTING BUGS</h1>
+<p class="indent">Bugs can be reported via <span class="bold"><a href="https://github.com/bfabio">github</a></span> or by sending an email to <a href="mailto:fb@fabiobonelli.it">fb@fabiobonelli.it</a>. Patches welcome. Repro steps even more.</p>
+
+<h1>SEE ALSO</h1>
+<p class="indent"><span class="bold">bash</span>(1), <span class="bold">api</span>(8), <span class="bold">web</span>(6), <span class="bold">gcc</span>(1), <span class="bold">ruby</span>(1), <span class="bold">ansible</span>(1), <span class="bold">borg</span>(1), <span class="bold">tetris</span>(6)</p>
+
+<div class="man-footer">
+  <span>Bonelli</span>
+  <span>April 2026</span>
+  <span>FABIO(1)</span>
+</div>
+
+</div>
+</body>
 </html>
