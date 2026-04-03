@@ -3,148 +3,360 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>fabio(1) - manual page</title>
+  <title>~*~ FaBiO's HoMePaGe ~*~</title>
+  <meta name="description" content="Fabio Bonelli - The best homepage on the World Wide Web!">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'JetBrains Mono', monospace;
-      background: #fffff8;
-      color: #1a1a1a;
-      font-size: 14px;
-      line-height: 1.5;
-      padding: 2rem;
-      min-height: 100vh;
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+      background: #000080;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' fill='%23000080'/%3E%3Ccircle cx='20' cy='20' r='1' fill='%230000a0'/%3E%3C/svg%3E");
+      color: #ffff00;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
-    .man {
-      max-width: 700px;
+    .page {
+      max-width: 800px;
       margin: 0 auto;
-    }
-
-    .man-header, .man-footer {
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      font-size: 13px;
+      padding: 10px;
     }
 
     h1 {
-      font-size: 14px;
+      font-size: 28px;
+      color: #ff00ff;
+      text-shadow: 2px 2px #000;
+      margin: 10px 0;
+    }
+
+    h2 {
+      color: #00ffff;
+      font-size: 20px;
+      text-shadow: 1px 1px #000;
+    }
+
+    marquee {
+      background: #ff0000;
+      color: #ffff00;
       font-weight: bold;
-      margin: 1.5rem 0 0.5rem;
+      padding: 5px;
+      font-size: 16px;
+      margin: 10px 0;
     }
 
-    .indent {
-      margin-left: 5ch;
+    .rainbow {
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      height: 4px;
+      margin: 15px 0;
     }
 
-    .indent2 {
-      margin-left: 10ch;
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+      margin: 15px 0;
     }
 
-    .bold { font-weight: bold; }
-    .underline { text-decoration: underline; }
+    .content-box {
+      background: #000000;
+      border: 3px ridge #c0c0c0;
+      padding: 15px;
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 10px auto;
+    }
+
+    td {
+      border: 2px ridge #c0c0c0;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .label { color: #00ff00; font-weight: bold; }
+    .value { color: #ffffff; }
 
     a {
-      color: #1a1a1a;
-      text-decoration: underline;
+      color: #00ffff;
+      font-weight: bold;
     }
 
     a:hover {
-      background: #1a1a1a;
-      color: #fffff8;
+      color: #ff00ff;
+      text-decoration: underline overline;
     }
 
-    .opt {
+    a:visited {
+      color: #ff00ff;
+    }
+
+    .blink {
+      animation: blink90 1s step-end infinite;
+    }
+
+    @keyframes blink90 {
+      50% { visibility: hidden; }
+    }
+
+    .gif-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    /* Animated GIF replacements (CSS-only) */
+    .fire {
+      display: inline-block;
+      font-size: 20px;
+      animation: fire-dance 0.3s infinite alternate;
+    }
+
+    @keyframes fire-dance {
+      from { transform: scaleY(1) translateY(0); }
+      to { transform: scaleY(1.1) translateY(-2px); }
+    }
+
+    .spin {
+      display: inline-block;
+      animation: spin360 2s linear infinite;
+    }
+
+    @keyframes spin360 {
+      to { transform: rotate(360deg); }
+    }
+
+    .construction {
+      background: repeating-linear-gradient(
+        45deg,
+        #000,
+        #000 10px,
+        #ffcc00 10px,
+        #ffcc00 20px
+      );
+      color: #fff;
+      text-shadow: 2px 2px #000;
+      padding: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0;
+      border: 2px solid #ffcc00;
+    }
+
+    .guestbook-btn {
+      background: #c0c0c0;
+      border: 3px outset #fff;
+      padding: 5px 15px;
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .guestbook-btn:active {
+      border-style: inset;
+    }
+
+    .counter {
+      background: #000;
+      border: 2px inset #808080;
+      display: inline-block;
+      padding: 3px 10px;
+      font-family: 'Courier New', monospace;
+      color: #00ff00;
+      font-size: 16px;
       font-weight: bold;
     }
 
-    p {
-      margin: 0.3rem 0;
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0;
     }
 
-    .man-footer {
-      margin-top: 3rem;
+    .badge {
+      border: 2px outset #808080;
+      padding: 3px 8px;
+      font-size: 10px;
+      font-family: 'Courier New', monospace;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .badge-ie { background: #0078d7; }
+    .badge-nn { background: #006600; }
+    .badge-linux { background: #333; }
+    .badge-anarchy { background: #800000; }
+
+    .project-table {
+      width: 100%;
+    }
+
+    .project-table td {
+      background: #000040;
+    }
+
+    .email-link {
+      font-size: 18px;
+      color: #ff0;
+    }
+
+    .stars {
+      color: #ff0;
+      letter-spacing: 3px;
+    }
+
+    .welcome-text {
+      color: #00ff00;
+      font-size: 16px;
+      line-height: 1.8;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
-      body { font-size: 12px; padding: 1rem; }
-      .indent { margin-left: 3ch; }
-      .indent2 { margin-left: 6ch; }
+      h1 { font-size: 20px; }
+      body { font-size: 12px; }
     }
-
-    ::selection { background: #1a1a1a; color: #fffff8; }
   </style>
 </head>
 <body>
-<div class="man">
 
-<div class="man-header">
-  <span>FABIO(1)</span>
-  <span>User Commands</span>
-  <span>FABIO(1)</span>
+<div class="page">
+
+  <br>
+  <span class="fire">&#128293;</span>
+  <span class="fire">&#128293;</span>
+  <span class="fire">&#128293;</span>
+  <h1>~*~ WeLcOmE tO FaBiO's HoMePaGe ~*~</h1>
+  <span class="fire">&#128293;</span>
+  <span class="fire">&#128293;</span>
+  <span class="fire">&#128293;</span>
+
+  <div class="rainbow"></div>
+
+  <marquee scrollamount="4">*** WELCOME TO MY HOMEPAGE!!! *** BEST VIEWED AT 800x600 *** FABIO BONELLI'S PERSONAL PAGE *** YOU ARE VISITOR #<span id="counter-marquee">31337</span>! ***</marquee>
+
+  <div class="construction">
+    &#9888;&#65039; THIS PAGE IS UNDER CONSTRUCTION &#9888;&#65039; COME BACK SOON FOR MORE COOL STUFF!!!
+  </div>
+
+  <hr>
+
+  <div class="welcome-text">
+    Hi!!! My name is <b><font color="#ff00ff">Fabio Bonelli</font></b> and this is my homepage on the <span class="blink">World Wide Web</span>!!!
+    <br>I am a <b><font color="#00ffff">Freelance</font></b> from <font color="#00ff00">Italy</font> <span class="spin">&#127470;&#127481;</span>
+    <br>I am a freelance for the <b>European Commission</b>
+    <br>I have been on <a href="https://github.com/bfabio" target="_blank">GitHub</a> since <b>2011</b> and I have <b><font color="#ff0"></font></b> repos!!!
+  </div>
+
+  <hr>
+
+  <h2>&#128187; My Computer Languages &#128187;</h2>
+  <table>
+    <tr><td class="label">Go</td><td class="value">APIs, CLI tools, infrastructure</td></tr>
+    <tr><td class="label">Rust</td><td class="value">Emulators, system tools</td></tr>
+    <tr><td class="label">Python</td><td class="value">Automation, Freelance</td></tr>
+    <tr><td class="label">C</td><td class="value">Low-level tools</td></tr>
+    <tr><td class="label">Ruby</td><td class="value">Web stuff</td></tr>
+    <tr><td class="label">TypeScript</td><td class="value">Everything!!!</td></tr>
+  </table>
+
+  <hr>
+
+  <h2><span class="spin">&#9881;&#65039;</span> My Cool Projects <span class="spin">&#9881;&#65039;</span></h2>
+
+  <div class="content-box">
+    <table class="project-table">
+      <tr>
+        <td class="label"><a href="https://github.com/bfabio/gameperson" target="_blank">gameperson</a></td>
+        <td class="value">A Game Boy emulator written in Rust!!! It plays Tetris!!!</td>
+        <td><font color="#ff0">&#9733; 17 stars</font></td>
+      </tr>
+      <tr>
+        <td class="label"><a href="https://github.com/bfabio/packddir" target="_blank">packddir</a></td>
+        <td class="value">Extracts Quake 1 and 2 .PAK files (written in C!!!)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label"><a href="https://github.com/bfabio/ansible-borg_client" target="_blank">ansible-borg</a></td>
+        <td class="value">Configure borg backup for remote servers</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label"><a href="https://github.com/bfabio/liquid-nested-sort" target="_blank">liquid-nested-sort</a></td>
+        <td class="value">Sort with nested fields for Liquid (Ruby gem)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label"><a href="https://github.com/italia/developers-italia-api" target="_blank">developers-italia-api</a></td>
+        <td class="value">The API for Italian public software catalog</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label"><a href="https://github.com/bfabio/publiccode-api-client" target="_blank">publiccode-api-client</a></td>
+        <td class="value">Rust client for publiccode.yml API</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+
+  <h2>&#128231; Contact Me!!! &#128231;</h2>
+  <p class="email-link">
+    <a href="https://github.com/bfabio" target="_blank">&#128073; My GitHub Profile &#128072;</a>
+    <br><br>
+    <a href="mailto:fb@fabiobonelli.it">&#9993;&#65039; Send me an E-Mail!!! fb@fabiobonelli.it &#9993;&#65039;</a>
+  </p>
+
+  <hr>
+
+  <p><font color="#ff00ff"><i>Recalibrating warp matrices...</i></font></p>
+  <p><font color="#aaaaaa">I also love yogurt.</font></p>
+
+  <br>
+
+  <button class="guestbook-btn" onclick="alert('Sorry, the guestbook is broken since 1998!')">&#128214; Sign My Guestbook!!!</button>
+  <button class="guestbook-btn" onclick="alert('You are visitor #31337!')">&#128200; View Counter</button>
+
+  <br><br>
+
+  <p>You are visitor number: <span class="counter" id="counter">031337</span></p>
+
+  <br>
+
+  <div class="badge-row">
+    <span class="badge badge-ie">Best viewed in IE 4.0</span>
+    <span class="badge badge-nn">Netscape Now!</span>
+    <span class="badge badge-linux">Powered by Linux</span>
+    <span class="badge badge-anarchy">Made with Notepad</span>
+  </div>
+
+  <div class="rainbow"></div>
+
+  <p><font color="#808080" size="1">Copyright &copy; 1997-2026 Fabio Bonelli. All rights reserved.<br>Last updated: whenever I feel like it<br>This page is best viewed at 800x600 with 16-bit color</font></p>
+
+  <br>
+
 </div>
 
-<h1>NAME</h1>
-<p class="indent">fabio - technologist, systems engineer, open source contributor</p>
+<script>
+// Fake visitor counter that slowly increments
+let count = 31337;
+const counterEl = document.getElementById('counter');
+setInterval(() => {
+  count++;
+  counterEl.textContent = String(count).padStart(6, '0');
+}, 30000);
+</script>
 
-<h1>SYNOPSIS</h1>
-<p class="indent"><span class="bold">fabio</span> [<span class="underline">--lang</span>=<span class="underline">LANGUAGE</span>] [<span class="underline">--project</span>=<span class="underline">NAME</span>] [<span class="underline">COMMAND</span>]</p>
-
-<h1>DESCRIPTION</h1>
-<p class="indent"><span class="bold">fabio</span> is based in Italy, currently freelance for the <a href="https://ec.europa.eu" target="_blank" rel="noopener">European Commission</a>, previously at <a href="https://github.com/teamdigitale" target="_blank" rel="noopener">@teamdigitale</a>.</p>
-
-<h1>OPTIONS</h1>
-<p class="indent"><span class="opt">--lang</span>=<span class="underline">go</span></p>
-<p class="indent2">APIs, CLI tools, infrastructure. Primary weapon.</p>
-<p></p>
-<p class="indent"><span class="opt">--lang</span>=<span class="underline">rust</span></p>
-<p class="indent2">Emulators, system tools, API clients. Sharp and safe.</p>
-<p></p>
-<p class="indent"><span class="opt">--lang</span>=<span class="underline">python</span></p>
-<p class="indent2">Automation, infrastructure scripting. Quick and effective.</p>
-<p></p>
-<p class="indent"><span class="opt">--lang</span>=<span class="underline">c</span></p>
-<p class="indent2">Low-level tools, file format parsers. Close to metal.</p>
-<p></p>
-<p class="indent"><span class="opt">--lang</span>=<span class="underline">ruby</span></p>
-<p class="indent2">Scripting, Web (sigh).</p>
-<p></p>
-<p class="indent"><span class="opt">--os</span>=<span class="underline">gnu/linux</span></p>
-<p class="indent2">Ansible, containers, CI/CD</p>
-
-<h1>PROJECTS</h1>
-<p class="indent"><span class="bold"><a href="https://github.com/bfabio/gameperson" target="_blank" rel="noopener">gameperson</a></span>(1) - Game Boy emulator written in Rust. CPU opcodes, GPU rendering, sprites, joypad. Plays Tetris. 17 stars.</p>
-<p></p>
-<p class="indent"><span class="bold"><a href="https://github.com/bfabio/packddir" target="_blank" rel="noopener">packddir</a></span>(1) - Extracts Quake 1 and 2 .PAK files. Written in C.</p>
-<p></p>
-<p class="indent"><span class="bold"><a href="https://github.com/bfabio/ansible-borg_client" target="_blank" rel="noopener">ansible-borg_client</a></span>(5) - Ansible role to configure borg backup for remote server backup.</p>
-<p></p>
-<p class="indent"><span class="bold"><a href="https://github.com/italia/developers-italia-api" target="_blank" rel="noopener">developers-italia-api</a></span>(8) - The API powering the Italian public software catalog. Go, Fiber, PostgreSQL.</p>
-<p></p>
-<p class="indent"><span class="bold"><a href="https://github.com/publiccodeyml/publiccode.yml" target="_blank" rel="noopener">publiccode.yml</a></span>(7) - The publiccode.yml spec.</p>
-
-<h1>ENVIRONMENT</h1>
-<p class="indent"><span class="bold">GITHUB_USER=bfabio</p>
-<p class="indent"><span class="bold">LOCATION</span>=Italy</p>
-
-<h1>FILES</h1>
-<p class="indent"><span class="underline"><a href="pubkey.txt">/home/fabio/.gnupg/pubkey</a></span> - GPG public key.</p>
-<p class="indent"><span class="underline">/home/fabio/.config/yogurt</span> - Personal preferences.</p>
-
-<h1>REPORTING BUGS</h1>
-<p class="indent">Bugs can be reported via <span class="bold"><a href="https://github.com/bfabio">github</a></span> or by sending an email to <a href="mailto:fb@fabiobonelli.it">fb@fabiobonelli.it</a>. Patches welcome. Repro steps even more.</p>
-
-<h1>SEE ALSO</h1>
-<p class="indent"><span class="bold">bash</span>(1), <span class="bold">api</span>(8), <span class="bold">web</span>(6), <span class="bold">gcc</span>(1), <span class="bold">ruby</span>(1), <span class="bold">ansible</span>(1), <span class="bold">borg</span>(1), <span class="bold">tetris</span>(6)</p>
-
-<div class="man-footer">
-  <span>Bonelli</span>
-  <span>April 2026</span>
-  <span>FABIO(1)</span>
-</div>
-
-</div>
 </body>
 </html>
