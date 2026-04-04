@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/bfabio
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fabiobonelli.it
+  * I am bfabio (https://keybase.io/bfabio) on keybase.
+  * I have a public key ASA4ijn59X89qHnxfoUA-a94h_KQzqPQ_WeGqIujmzNU4Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a72179eda8e049b02587f630d8ed8db92f7d74ce07a381085eed6428ab7c06fc0a",
+      "host": "keybase.io",
+      "kid": "0120388a39f9f57f3da879f17e8500f9af7887f290cea3d0fd6786a88ba39b3354e00a",
+      "uid": "045764bd310f12a414ad4f8dda1a2719",
+      "username": "bfabio"
+    },
+    "merkle_root": {
+      "ctime": 1513190291,
+      "hash": "80dfe23fbf97f22c8970f866b05daa1d1a5db0480f07d752b45bb0cd117c04607773a094deddc5646a437a94ecc0c353ba9d9fedaffde62382111e84a850e743",
+      "hash_meta": "65d23e143e55de31e077ee4c23e0a5916ffb0ea308d8a41fef3a6d539a38b72e",
+      "seqno": 1814255
+    },
+    "service": {
+      "hostname": "fabiobonelli.it",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.37"
+  },
+  "ctime": 1513190740,
+  "expire_in": 504576000,
+  "prev": "5fa45ade6918a1cabb03d09ae4775e14dd082bcceffc5da9109d0e2a4ed51b13",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOIo5+fV/Pah58X6FAPmveIfykM6j0P1nhqiLo5szVOAKp3BheWxvYWTFA0Z7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYTcyMTc5ZWRhOGUwNDliMDI1ODdmNjMwZDhlZDhkYjkyZjdkNzRjZTA3YTM4MTA4NWVlZDY0MjhhYjdjMDZmYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzg4YTM5ZjlmNTdmM2RhODc5ZjE3ZTg1MDBmOWFmNzg4N2YyOTBjZWEzZDBmZDY3ODZhODhiYTM5YjMzNTRlMDBhIiwidWlkIjoiMDQ1NzY0YmQzMTBmMTJhNDE0YWQ0ZjhkZGExYTI3MTkiLCJ1c2VybmFtZSI6ImJmYWJpbyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxMzE5MDI5MSwiaGFzaCI6IjgwZGZlMjNmYmY5N2YyMmM4OTcwZjg2NmIwNWRhYTFkMWE1ZGIwNDgwZjA3ZDc1MmI0NWJiMGNkMTE3YzA0NjA3NzczYTA5NGRlZGRjNTY0NmE0MzdhOTRlY2MwYzM1M2JhOWQ5ZmVkYWZmZGU2MjM4MjExMWU4NGE4NTBlNzQzIiwiaGFzaF9tZXRhIjoiNjVkMjNlMTQzZTU1ZGUzMWUwNzdlZTRjMjNlMGE1OTE2ZmZiMGVhMzA4ZDhhNDFmZWYzYTZkNTM5YTM4YjcyZSIsInNlcW5vIjoxODE0MjU1fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImZhYmlvYm9uZWxsaS5pdCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM3In0sImN0aW1lIjoxNTEzMTkwNzQwLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjVmYTQ1YWRlNjkxOGExY2FiYjAzZDA5YWU0Nzc1ZTE0ZGQwODJiY2NlZmZjNWRhOTEwOWQwZTJhNGVkNTFiMTMiLCJzZXFubyI6MTAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA/kJu/rI+TXvfSA7FCVf6IzlxFMGo1gEnsFoxvydsKJmoVr0tyXp4aS1uvKY8LZD1JLJC9tcixBtoO/z0/gTWC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEID6saFt5AxqFbLy0OZkqwH++A12mkdeCGcaQnkSIU3pFo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bfabio
+
+==================================================================
