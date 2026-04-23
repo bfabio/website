@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>fabio(1) - manual page</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonts/jetbrains-mono-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/jetbrains-mono-700-normal.woff2') format('woff2');
+}
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'JetBrains Mono', monospace;
@@ -75,6 +88,13 @@
     }
 
     ::selection { background: #1a1a1a; color: #fffff8; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #d4d4d4; }
+      a { color: #d4d4d4; }
+      a:hover { background: #d4d4d4; color: #1a1a1a; }
+      ::selection { background: #d4d4d4; color: #1a1a1a; }
+    }
   </style>
 </head>
 <body>
